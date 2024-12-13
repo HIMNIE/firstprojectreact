@@ -1,0 +1,380 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #209CFF 0%, #68E0CF 100%);
+  /* Fondo de gradiente */
+  color: #333;
+  line-height: 1.6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que el pie de página se mantenga abajo */
+}
+
+/* Encabezado */
+header {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro pero con algo de transparencia */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+  margin: 40px 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+section:nth-of-type(even) {
+  background-color: rgba(240, 240, 240, 0.8); /* Fondo alterno más claro */
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Sobre mí */
+
+#home {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.profile-container {
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;   /* Ajusta el tamaño según lo desees */
+  height: 150px;  /* Mismo valor que el ancho para que sea circular */
+  border-radius: 50%;  /* Hace que la imagen sea redonda */
+  object-fit: cover;   /* Asegura que la imagen no se distorsione */
+  border: 5px solid #fff; /* Borde blanco alrededor de la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+
+#about {
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Proyectos */
+/* Contenedor de los proyectos */
+.project-list {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los proyectos */
+  gap: 20px; /* Añade espacio entre los elementos */
+  flex-wrap: wrap; /* Hace que los proyectos se acomoden en varias filas si es necesario */
+  padding: 20px 0;
+}
+
+/* Cada tarjeta de proyecto */
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 48%; /* Esto hace que los proyectos ocupen el 48% del ancho */
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: white;
+  background-color: #209CFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+  background-color: #68E0CF;
+}
+/* General Container */
+#contacto {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Título del formulario */
+#contacto h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Campos del formulario */
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Efecto de enfoque en los inputs */
+.field input:focus,
+.field textarea:focus {
+  border-color: #209CFF;
+  box-shadow: 0 0 5px rgba(32, 156, 255, 0.5);
+  outline: none;
+}
+
+/* Textarea */
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Botón de envío */
+#button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #209CFF, #68E0CF);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+#button:hover {
+  background: linear-gradient(to left, #209CFF, #68E0CF);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contacto {
+    padding: 15px;
+  }
+
+  #contacto h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Estilos generales del footer */
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.p-footer {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+/* Estilos de los íconos sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #2575fc; /* Cambio de color al pasar el ratón */
+  transform: translateY(-5px); /* Efecto de movimiento al pasar el ratón */
+}
+
+/* Estilo del ícono de WhatsApp */
+.whatsapp-icon {
+  color: #25d366; /* Color verde característico de WhatsApp */
+  font-size: 2rem;
+}
+
+/* Para el ícono de WhatsApp cuando pasa el ratón */
+.whatsapp-icon:hover {
+  color: #128c7e;
+  transform: translateY(-5px);
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .social-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    font-size: 2rem; /* Aumenta el tamaño de los íconos en dispositivos móviles */
+  }
+
+  .p-footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #contact {
+    padding: 20px;
+  }
+}
+
+
+
+/* Sección de habilidades */
+#skills {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.skill p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+}
